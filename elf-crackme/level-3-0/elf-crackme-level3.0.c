@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include"util.h"
 
 void read_flag() {
 	char *command = "cat";
@@ -14,8 +13,6 @@ void read_flag() {
 }
 
 int main() {
-    print_desc();
     read_flag();
-    print_exit();
     return 0;
 }

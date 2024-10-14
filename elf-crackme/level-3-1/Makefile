@@ -1,14 +1,13 @@
 TARGET = elf-crackme-level3.1
-CC     = gcc
-CFLAGS = -Wall -Wextra -Werror
-INCLUDE = -I ../../include ../../include/util.c
+CC     = gcc-4.4
+CFLAGS = -Wall -Wextra -Werror -m32
 
 .PHONY: all clean
 
 all: $(TARGET)
 
 %: %.c
-	$(CC) $(CFLAGS) $(SECFLAGS) $(INCLUDE) -o $@ $<
+	$(CC) $(CFLAGS) $(SECFLAGS) -o $@ $<
 
 clean: 
 	rm -rf $(TARGET)

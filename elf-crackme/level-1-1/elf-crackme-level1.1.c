@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include"util.h"
+
 
 void init()
 {
@@ -28,9 +28,8 @@ void read_flag()
 
 int main(){
 	init();
-	print_desc();
-	read_flag();
-	print_exit();		
+	
+	read_flag();		
 
 	return 0;
 }
